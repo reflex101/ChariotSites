@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    background-color: aliceblue;
+    overflow: hidden;
+
+}
+.menu{
+    display: none;
+}
+nav{
+    width: 100%;
+    height: 10rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 7rem;
+    
+    background-color:white; 
+}
+.nav-container{
+    width: 80%;
+    max-width:96rem;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+  
+}
+.logo img{
+    width: 5rem;
+    height: 5rem;;
+}
+nav ul{
+    list-style: none;
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 1.5rem;
+    transition: opacity 0.3s
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+nav:hover ul li:not(:hover){
+    opacity: 0.5;
+}
+@media screen and (max-width:768px){
+    #sec-1 h1{
+        text-align: center;
+    }
+    #sec-1 p{
+        text-align: center;
+    }
+    .logo{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: fixed;
+        width: 3rem;
+        height: 3rem;
+        top: 3rem;
+        right: 3rem;
+        z-index: 999;
+        cursor: pointer;
+        transition: transform 0.5s, cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    }
+    .bar, .bar::before, .bar::after{
+        position: absolute;
+        background-color: black;
+        margin: auto;
+        width: 50%;
+        height: 3px;
+        content: "";
+        top: 50%;
+        left: 0;
+        }
+        .bar{
+            margin-top: -2px;
+        }
+        .bar::before{
+            top: -1.5rem;
+        }
+        .bar::after{
+            top: 1.5rem;
+        }
+        .bar::before, .bar::after{
+            transform: rotate(0deg);
+
+        }
+        .active .bar::before{
+            transform: rotate(45deg);
+        }
+        .active .bar::after{
+            transform: rotate(-45deg);
+        }
+        .active .bar::before,
+        .active .bar::before
+        {
+            top: 0;
+        }
+      
+        .menu-open nav{
+            transform: translateX(0);
+        }
+        nav ul{
+            width: 100%;
+            text-align: center;
+            padding-top: 10rem;
+        }
+        nav ul li{
+            display: block;
+            padding: 4rem 1rem;
+
+        }
+
+}
+
+#sec-1 h1{
+    padding-top: 20%;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#sec-1 p{
+    line-height: 25px;
+}
+#sec-2{
+    padding-top: 100px;
+    line-height: 30px;
+}
+#sec-3{
+    padding-top: 150px;
+}
+#sec-3 h2{
+    padding-bottom: 20px;
+    
+}
+#sec-3 p{
+    padding-bottom: 10px;
+}
+#sec-4{
+    margin-top: 100px;
+    height: 300px;
+    background: #333;
+}
+#sec-4 h4{
+    padding-top: 100px;
+    color:white;
+}
+#sec-4 p{
+    color:rgb(224, 217, 217);
+}
+
+#sec-5{
+    padding-top: 200px;
+}
+#sec-5 h3{
+    text-transform: initial;
+    font-size:2.5em;  
+    padding-bottom: 30px;
+}
+
+#sec-6{
+    padding-top: 150px;
+}
+#sec-6 h2{
+    padding-bottom: 30px;
+    font-size: 2.3
+}
+#sec-7{
+    padding-top: 200px;
+}
+#sec-7 h2{
+    padding-bottom: 30px;
+    font-size: 2.3em;
+}
+#team{
+    padding-top: 200px;
+}
+#team h2{
+    padding-bottom: 40px;
+    font-size: 2.5em;
+}
+#sec-8{
+    padding-top: 200px;
+}
+#sec-8 h2{
+    padding-bottom: 40px;
+    font-size: 2.5em;
+}
+footer{
+    padding-top:100px;
+    background: black;
+    height:200px;  
+}
+footer p{
+    color: wheat;
+}
